@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtTen = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtDVD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +53,15 @@
             this.panel1.Size = new System.Drawing.Size(401, 33);
             this.panel1.TabIndex = 0;
             // 
+            // txtTen
+            // 
+            this.txtTen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTen.Location = new System.Drawing.Point(126, 0);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(275, 30);
+            this.txtTen.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -63,15 +72,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Vật Tư:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtTen
-            // 
-            this.txtTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(126, 0);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(275, 30);
-            this.txtTen.TabIndex = 1;
             // 
             // panel2
             // 

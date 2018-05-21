@@ -53,11 +53,23 @@
     <Compile Include="GUI\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Sua\frmSuaVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sua\frmSuaVT.Designer.cs">
+      <DependentUpon>frmSuaVT.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Them\frmThemVT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Them\frmThemVT.Designer.cs">
       <DependentUpon>frmThemVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\ucNhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\ucNhaCungCap.Designer.cs">
+      <DependentUpon>ucNhaCungCap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UC\ucVatTu.cs">
       <SubType>UserControl</SubType>
@@ -73,6 +85,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sua\frmSuaVT.resx">
+      <DependentUpon>frmSuaVT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Them\frmThemVT.resx">
       <DependentUpon>frmThemVT.cs</DependentUpon>
@@ -102,8 +117,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\Sua\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
