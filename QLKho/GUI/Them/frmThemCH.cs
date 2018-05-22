@@ -11,13 +11,12 @@ using System.Windows.Forms;
 
 namespace QLKho.GUI.Them
 {
-    public partial class frmThemNCC : Form
+    public partial class frmThemCH : Form
     {
-        public frmThemNCC()
+        public frmThemCH()
         {
             InitializeComponent();
         }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
             string ten = txtTen.Text;
@@ -25,7 +24,7 @@ namespace QLKho.GUI.Them
             string sdt = txtSDT.Text;
             if (kiemTraDuLieu(ten, diachi, sdt))
             {
-                int ketqua = NhaCungCapControl.themDuLieu(ten, diachi, sdt);
+                int ketqua = CuaHangControl.themDuLieu(ten, diachi, sdt);
                 if (ketqua > 0)
                 {
                     this.Close();
@@ -36,7 +35,5 @@ namespace QLKho.GUI.Them
         {
             return true;
         }
-
-       
     }
 }

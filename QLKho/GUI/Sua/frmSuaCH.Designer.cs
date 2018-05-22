@@ -1,6 +1,6 @@
 ﻿namespace QLKho.GUI.Sua
 {
-    partial class frmSuaNCC
+    partial class frmSuaCH
     {
         /// <summary>
         /// Required designer variable.
@@ -65,10 +65,10 @@
             this.groupBox2.Controls.Add(this.panel4);
             this.groupBox2.Controls.Add(this.panel5);
             this.groupBox2.Controls.Add(this.panel6);
-            this.groupBox2.Location = new System.Drawing.Point(468, 44);
+            this.groupBox2.Location = new System.Drawing.Point(464, 48);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(382, 223);
-            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mới";
             // 
@@ -143,9 +143,9 @@
             // 
             this.txtTenMoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTenMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenMoi.Location = new System.Drawing.Point(126, 0);
+            this.txtTenMoi.Location = new System.Drawing.Point(131, 0);
             this.txtTenMoi.Name = "txtTenMoi";
-            this.txtTenMoi.Size = new System.Drawing.Size(244, 30);
+            this.txtTenMoi.Size = new System.Drawing.Size(239, 30);
             this.txtTenMoi.TabIndex = 1;
             // 
             // label6
@@ -154,18 +154,18 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 33);
+            this.label6.Size = new System.Drawing.Size(131, 33);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Tên Nhà CC:";
+            this.label6.Text = "Tên Cửa Hàng:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnXacNhan
             // 
             this.btnXacNhan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXacNhan.Location = new System.Drawing.Point(219, 284);
+            this.btnXacNhan.Location = new System.Drawing.Point(215, 288);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(136, 46);
-            this.btnXacNhan.TabIndex = 11;
+            this.btnXacNhan.TabIndex = 15;
             this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
@@ -174,10 +174,10 @@
             // 
             this.btnXoa.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(563, 284);
+            this.btnXoa.Location = new System.Drawing.Point(559, 288);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(136, 46);
-            this.btnXoa.TabIndex = 12;
+            this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Thoát";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
@@ -187,10 +187,10 @@
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(26, 44);
+            this.groupBox1.Location = new System.Drawing.Point(22, 48);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 223);
-            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cũ";
             // 
@@ -265,9 +265,9 @@
             // 
             this.txtTenCu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTenCu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenCu.Location = new System.Drawing.Point(126, 0);
+            this.txtTenCu.Location = new System.Drawing.Point(133, 0);
             this.txtTenCu.Name = "txtTenCu";
-            this.txtTenCu.Size = new System.Drawing.Size(244, 30);
+            this.txtTenCu.Size = new System.Drawing.Size(237, 30);
             this.txtTenCu.TabIndex = 1;
             // 
             // label2
@@ -276,22 +276,22 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 33);
+            this.label2.Size = new System.Drawing.Size(133, 33);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Tên Nhà CC:";
+            this.label2.Text = "Tên Cửa Hàng:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // frmSuaNCC
+            // frmSuaCH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 357);
+            this.ClientSize = new System.Drawing.Size(870, 361);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmSuaNCC";
-            this.Text = "frmSuaNCC";
+            this.Name = "frmSuaCH";
+            this.Text = "frmSuaCH";
             this.groupBox2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

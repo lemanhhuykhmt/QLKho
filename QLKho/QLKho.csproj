@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\CuaHangControl.cs" />
     <Compile Include="Control\NhaCungCapControl.cs" />
     <Compile Include="Control\VatTuControl.cs" />
     <Compile Include="Extend\DataProvider.cs" />
@@ -53,6 +54,12 @@
     </Compile>
     <Compile Include="GUI\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Sua\frmSuaCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sua\frmSuaCH.Designer.cs">
+      <DependentUpon>frmSuaCH.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Sua\frmSuaNCC.cs">
       <SubType>Form</SubType>
@@ -66,6 +73,12 @@
     <Compile Include="GUI\Sua\frmSuaVT.Designer.cs">
       <DependentUpon>frmSuaVT.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Them\frmThemCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Them\frmThemCH.Designer.cs">
+      <DependentUpon>frmThemCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Them\frmThemNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +90,12 @@
     </Compile>
     <Compile Include="GUI\Them\frmThemVT.Designer.cs">
       <DependentUpon>frmThemVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\ucCuaHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\ucCuaHang.Designer.cs">
+      <DependentUpon>ucCuaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UC\ucNhaCungCap.cs">
       <SubType>UserControl</SubType>
@@ -99,17 +118,26 @@
     <EmbeddedResource Include="GUI\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sua\frmSuaCH.resx">
+      <DependentUpon>frmSuaCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sua\frmSuaNCC.resx">
       <DependentUpon>frmSuaNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sua\frmSuaVT.resx">
       <DependentUpon>frmSuaVT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Them\frmThemCH.resx">
+      <DependentUpon>frmThemCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Them\frmThemNCC.resx">
       <DependentUpon>frmThemNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Them\frmThemVT.resx">
       <DependentUpon>frmThemVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\ucCuaHang.resx">
+      <DependentUpon>ucCuaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC\ucNhaCungCap.resx">
       <DependentUpon>ucNhaCungCap.cs</DependentUpon>

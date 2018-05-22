@@ -11,23 +11,23 @@ using System.Windows.Forms;
 
 namespace QLKho.GUI.Sua
 {
-    public partial class frmSuaNCC : Form
+    public partial class frmSuaCH : Form
     {
-        private int MaNCC;
-        public frmSuaNCC()
+        private int MaCH;
+        public frmSuaCH()
         {
             InitializeComponent();
         }
-        public frmSuaNCC(int ma)
+        public frmSuaCH(int ma)
         {
-            MaNCC = ma;
+            MaCH = ma;
             InitializeComponent();
             loadDuLieu();
         }
         private void loadDuLieu()
         {
-            DataTable dt = NhaCungCapControl.layThongTin(MaNCC);
-            txtTenCu.Text = dt.Rows[0]["TenNCC"].ToString();
+            DataTable dt = CuaHangControl.layThongTin(MaCH);
+            txtTenCu.Text = dt.Rows[0]["TenCH"].ToString();
             txtDiaChiCu.Text = dt.Rows[0]["DiaChi"].ToString();
             txtSDTCu.Text = dt.Rows[0]["SDT"].ToString();
         }
@@ -37,13 +37,11 @@ namespace QLKho.GUI.Sua
             string ten = txtTenMoi.Text;
             string diachi = txtDiaChiMoi.Text;
             string sdt = txtSDTMoi.Text;
-            int ketqua = NhaCungCapControl.suaDuLieu(MaNCC, ten, diachi, sdt);
+            int ketqua = CuaHangControl.suaDuLieu(MaCH, ten, diachi, sdt);
             if (ketqua > 0)
             {
                 this.Close();
             }
         }
-
-        
     }
 }

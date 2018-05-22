@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnPhieuMuon = new System.Windows.Forms.Button();
+            this.btnCuaHang = new System.Windows.Forms.Button();
             this.btnNCC = new System.Windows.Forms.Button();
             this.btnVatTu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,7 +40,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnPhieuMuon);
+            this.groupBox1.Controls.Add(this.btnCuaHang);
             this.groupBox1.Controls.Add(this.btnNCC);
             this.groupBox1.Controls.Add(this.btnVatTu);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -51,14 +51,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lựa Chọn";
             // 
-            // btnPhieuMuon
+            // btnCuaHang
             // 
-            this.btnPhieuMuon.Location = new System.Drawing.Point(3, 139);
-            this.btnPhieuMuon.Name = "btnPhieuMuon";
-            this.btnPhieuMuon.Size = new System.Drawing.Size(197, 43);
-            this.btnPhieuMuon.TabIndex = 2;
-            this.btnPhieuMuon.Text = "Phiếu Mượn";
-            this.btnPhieuMuon.UseVisualStyleBackColor = true;
+            this.btnCuaHang.Location = new System.Drawing.Point(3, 139);
+            this.btnCuaHang.Name = "btnCuaHang";
+            this.btnCuaHang.Size = new System.Drawing.Size(197, 43);
+            this.btnCuaHang.TabIndex = 2;
+            this.btnCuaHang.Text = "Phiếu Mượn";
+            this.btnCuaHang.UseVisualStyleBackColor = true;
+            this.btnCuaHang.Click += new System.EventHandler(this.btnCuaHang_Click);
             // 
             // btnNCC
             // 
@@ -115,7 +116,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnPhieuMuon;
+        private System.Windows.Forms.Button btnCuaHang;
         private System.Windows.Forms.Button btnNCC;
         private System.Windows.Forms.Button btnVatTu;
         private System.Windows.Forms.Panel panel1;
