@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\NhaCungCapControl.cs" />
     <Compile Include="Control\VatTuControl.cs" />
     <Compile Include="Extend\DataProvider.cs" />
     <Compile Include="GUI\frmChinh.cs">
@@ -53,11 +54,23 @@
     <Compile Include="GUI\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Sua\frmSuaNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sua\frmSuaNCC.Designer.cs">
+      <DependentUpon>frmSuaNCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Sua\frmSuaVT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Sua\frmSuaVT.Designer.cs">
       <DependentUpon>frmSuaVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Them\frmThemNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Them\frmThemNCC.Designer.cs">
+      <DependentUpon>frmThemNCC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Them\frmThemVT.cs">
       <SubType>Form</SubType>
@@ -86,11 +99,20 @@
     <EmbeddedResource Include="GUI\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sua\frmSuaNCC.resx">
+      <DependentUpon>frmSuaNCC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sua\frmSuaVT.resx">
       <DependentUpon>frmSuaVT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Them\frmThemNCC.resx">
+      <DependentUpon>frmThemNCC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Them\frmThemVT.resx">
       <DependentUpon>frmThemVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\ucNhaCungCap.resx">
+      <DependentUpon>ucNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC\ucVatTu.resx">
       <DependentUpon>ucVatTu.cs</DependentUpon>

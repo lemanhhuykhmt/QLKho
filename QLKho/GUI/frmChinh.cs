@@ -26,5 +26,14 @@ namespace QLKho.GUI
             frm.Visible = true;
             pnlNoiDung.Controls.Add(frm);
         }
+
+        private void btnNCC_Click(object sender, EventArgs e)
+        {
+            pnlNoiDung.Controls.Clear();
+            ucNhaCungCap frm = new ucNhaCungCap();
+            frm.Size = new Size(pnlNoiDung.Width, pnlNoiDung.Height);
+            frm.Visible = true;
+            pnlNoiDung.Controls.Add(frm);
+        }
     }
 }

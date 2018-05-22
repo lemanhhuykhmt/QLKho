@@ -40,6 +40,7 @@
             this.colXoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).BeginInit();
             this.panel3.SuspendLayout();
@@ -47,6 +48,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnLoad);
             this.panel1.Controls.Add(this.txtTimKiem);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -67,7 +69,7 @@
             // btnThem
             // 
             this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThem.Location = new System.Drawing.Point(739, 16);
+            this.btnThem.Location = new System.Drawing.Point(627, 14);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(136, 34);
             this.btnThem.TabIndex = 2;
@@ -153,6 +155,16 @@
             this.panel2.Size = new System.Drawing.Size(923, 617);
             this.panel2.TabIndex = 7;
             // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(869, 44);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(51, 23);
+            this.btnLoad.TabIndex = 7;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // ucVatTu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -184,5 +196,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn colXoa;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnLoad;
     }
 }

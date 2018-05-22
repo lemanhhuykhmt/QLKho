@@ -11,38 +11,34 @@ using System.Windows.Forms;
 
 namespace QLKho.GUI.Sua
 {
-    public partial class frmSuaVT : Form
+    public partial class frmSuaNCC : Form
     {
-        private int MaVT;
-        public frmSuaVT()
+        private int MaNCC;
+        public frmSuaNCC()
         {
             InitializeComponent();
         }
-        public frmSuaVT(int mavt)
+        public frmSuaNCC(int ma)
         {
-            MaVT = mavt;
+            MaNCC = ma;
             InitializeComponent();
             loadDuLieu();
         }
         private void loadDuLieu()
         {
-            DataTable dt = VatTuControl.layThongTin(MaVT);
-            txtTenCu.Text = dt.Rows[0]["TenVT"].ToString();
-            txtDVDCu.Text = dt.Rows[0]["DonVi"].ToString();
-            txtSoLuongCu.Text = dt.Rows[0]["SoLuong"].ToString();
+            DataTable dt = NhaCungCapControl.layThongTin(MaNCC);
+            txtTenCu.Text = dt.Rows[0]["TenNCC"].ToString();
+            txtDiaChiCu.Text = dt.Rows[0]["DiaChi"].ToString();
+            txtSDTCu.Text = dt.Rows[0]["SDT"].ToString();
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             string ten = txtTenMoi.Text;
-            string donvi = txtDVDMoi.Text;
-            int soluong = 0;
-            if(txtSoLuongMoi.Text.Length > 0)
-            {
-                soluong = Convert.ToInt32(txtSoLuongMoi.Text);
-            }
-            int ketqua = VatTuControl.suaDuLieu(MaVT, ten, donvi, soluong);
-            if(ketqua > 0)
+            string diachi = txtDiaChiMoi.Text;
+            string sdt = txtSDTMoi.Text;
+            int ketqua = NhaCungCapControl.suaDuLieu(MaNCC, ten, diachi, sdt);
+            if (ketqua > 0)
             {
                 this.Close();
             }

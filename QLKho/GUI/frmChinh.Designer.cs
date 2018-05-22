@@ -30,7 +30,7 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPhieuMuon = new System.Windows.Forms.Button();
-            this.btnHocSinh = new System.Windows.Forms.Button();
+            this.btnNCC = new System.Windows.Forms.Button();
             this.btnVatTu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNoiDung = new System.Windows.Forms.Panel();
@@ -41,7 +41,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnPhieuMuon);
-            this.groupBox1.Controls.Add(this.btnHocSinh);
+            this.groupBox1.Controls.Add(this.btnNCC);
             this.groupBox1.Controls.Add(this.btnVatTu);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -60,14 +60,15 @@
             this.btnPhieuMuon.Text = "Phiếu Mượn";
             this.btnPhieuMuon.UseVisualStyleBackColor = true;
             // 
-            // btnHocSinh
+            // btnNCC
             // 
-            this.btnHocSinh.Location = new System.Drawing.Point(3, 90);
-            this.btnHocSinh.Name = "btnHocSinh";
-            this.btnHocSinh.Size = new System.Drawing.Size(197, 43);
-            this.btnHocSinh.TabIndex = 0;
-            this.btnHocSinh.Text = "Sách";
-            this.btnHocSinh.UseVisualStyleBackColor = true;
+            this.btnNCC.Location = new System.Drawing.Point(3, 90);
+            this.btnNCC.Name = "btnNCC";
+            this.btnNCC.Size = new System.Drawing.Size(197, 43);
+            this.btnNCC.TabIndex = 0;
+            this.btnNCC.Text = "Sách";
+            this.btnNCC.UseVisualStyleBackColor = true;
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
             // btnVatTu
             // 
@@ -115,7 +116,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPhieuMuon;
-        private System.Windows.Forms.Button btnHocSinh;
+        private System.Windows.Forms.Button btnNCC;
         private System.Windows.Forms.Button btnVatTu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlNoiDung;

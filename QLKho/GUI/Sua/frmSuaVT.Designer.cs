@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtTenCu = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtDVDCu = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnXacNhan = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtSoLuongCu = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtDVDCu = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtTenCu = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnXacNhan = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtSoLuongMoi = new System.Windows.Forms.TextBox();
@@ -51,9 +51,9 @@
             this.txtTenMoi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -73,34 +73,34 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cũ";
             // 
-            // panel2
+            // panel7
             // 
-            this.panel2.Controls.Add(this.txtTenCu);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(6, 32);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(370, 33);
-            this.panel2.TabIndex = 2;
+            this.panel7.Controls.Add(this.txtSoLuongCu);
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Location = new System.Drawing.Point(6, 161);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(370, 33);
+            this.panel7.TabIndex = 4;
             // 
-            // txtTenCu
+            // txtSoLuongCu
             // 
-            this.txtTenCu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTenCu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenCu.Location = new System.Drawing.Point(126, 0);
-            this.txtTenCu.Name = "txtTenCu";
-            this.txtTenCu.Size = new System.Drawing.Size(244, 30);
-            this.txtTenCu.TabIndex = 1;
+            this.txtSoLuongCu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoLuongCu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuongCu.Location = new System.Drawing.Point(126, 0);
+            this.txtSoLuongCu.Name = "txtSoLuongCu";
+            this.txtSoLuongCu.Size = new System.Drawing.Size(244, 30);
+            this.txtSoLuongCu.TabIndex = 1;
             // 
-            // label2
+            // label7
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 33);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên Vật Tư:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 33);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Số Lượng";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
@@ -131,6 +131,35 @@
             this.label3.Text = "Đơn Vị Đo:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txtTenCu);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(6, 32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(370, 33);
+            this.panel2.TabIndex = 2;
+            // 
+            // txtTenCu
+            // 
+            this.txtTenCu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTenCu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenCu.Location = new System.Drawing.Point(126, 0);
+            this.txtTenCu.Name = "txtTenCu";
+            this.txtTenCu.Size = new System.Drawing.Size(244, 30);
+            this.txtTenCu.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 33);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên Vật Tư:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // btnXacNhan
             // 
             this.btnXacNhan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,35 +181,6 @@
             this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Thoát";
             this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.txtSoLuongCu);
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(6, 161);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(370, 33);
-            this.panel7.TabIndex = 4;
-            // 
-            // txtSoLuongCu
-            // 
-            this.txtSoLuongCu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSoLuongCu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuongCu.Location = new System.Drawing.Point(126, 0);
-            this.txtSoLuongCu.Name = "txtSoLuongCu";
-            this.txtSoLuongCu.Size = new System.Drawing.Size(244, 30);
-            this.txtSoLuongCu.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 33);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Số Lượng";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBox2
             // 
@@ -293,12 +293,12 @@
             this.Name = "frmSuaVT";
             this.Text = "frmSuaVT";
             this.groupBox1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
