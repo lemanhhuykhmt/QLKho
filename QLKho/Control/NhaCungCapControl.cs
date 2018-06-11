@@ -15,7 +15,7 @@ namespace QLKho.Control
             string query = "select * from NhaCungCap";
             return DataProvider.Instance.ExecuteQuery(query);
         }
-        
+
         public static int themDuLieu(string ten, string diachi, string sdt)
         {
             string query = "exec themncc @ten , @diachi , @sdt";
